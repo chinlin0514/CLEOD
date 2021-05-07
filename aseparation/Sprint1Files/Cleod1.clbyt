@@ -1,0 +1,9 @@
+// again not for parsing, but a human-readable bytecode-compiled version of Cleod1.cleod
+0000    LITERAL | INT | 0 (8 bytes)             # 0 on stack
+000A    PRINT                                   # PRINT consumes 0 from stack
+000B    LITERAL | INT | 2 (8 bytes)             # 2 on stack
+0015    LITERAL | INT | 6 (8 bytes)             # 6 on stack
+001F    SUBTRACT                                # 2, 6 consumed from stack. (2 - 6) now on stack
+0020    LITERAL | DOUBLE | 2.4 (8 bytes)        # 2.4 now on stack
+002A    DIVIDE                                  # (2 - 6) and 2.4 consumed from stack. (2 - 6) / 2.4 now on stack
+002B    PRINT                                   # PRINT consumes (2 - 6) / 2.4 from stack
